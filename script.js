@@ -54,31 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Intersection Observer for Reveal Animations
-  const revealElements = document.querySelectorAll('.section');
-
-  if ('IntersectionObserver' in window) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    revealElements.forEach(element => {
-      revealObserver.observe(element);
-    });
-  } else {
-    // Fallback for browsers without IntersectionObserver
-    revealElements.forEach(element => {
-      element.classList.add('reveal');
-    });
-  }
+  // Keep content sections visible at all times.
+  // The previous reveal-on-scroll system applied a hidden class without
+  // ever promoting sections to a visible state, which caused the page
+  // content to disappear after load.
+  const contentSections = document.querySelectorAll('.section');
+  contentSections.forEach(section => {
+    section.classList.remove('reveal', 'is-visible');
+  });
 
   // Hero Section Animations - Use CSS animations for better performance
   const heroElements = document.querySelectorAll('.hero-badge, .hero-title, .hero-subtitle, .hero-stats, .hero-actions');

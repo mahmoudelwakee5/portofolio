@@ -1229,16 +1229,11 @@ select {
   }
 }
 
-/* Scroll Animations */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-
+/* Legacy reveal class kept fail-safe so content never disappears */
+.reveal,
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* Responsive Design */
@@ -1948,18 +1943,11 @@ select {
   font-size: 0.9rem;
 }
 
-/* Scroll reveal */
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition:
-    opacity 650ms ease,
-    transform 650ms ease;
-}
-
+/* Legacy reveal class kept fail-safe so content never disappears */
+.reveal,
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* Responsive behavior */
