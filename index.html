@@ -3,593 +3,736 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahmoud Anwar Elwakeel | Premium WordPress Developer</title>
-  <meta name="description" content="Elite WordPress Developer specializing in WooCommerce stores and technical support. Building premium websites that drive results for businesses worldwide.">
+  <title>Mahmoud Anwar Elwakeel | Full Stack WordPress Developer</title>
+  <meta
+    name="description"
+    content="Full Stack WordPress Developer building premium, high-performance websites with a growing foundation in Linux, cloud, DevOps, and infrastructure."
+  >
+  <meta
+    name="keywords"
+    content="Mahmoud Anwar Elwakeel, Full Stack WordPress Developer, WooCommerce Developer, WordPress Portfolio, PHP, MySQL, Linux, Cloud, DevOps"
+  >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#hero" class="brand">
-        <div class="brand-logo">MA</div>
-        <div class="brand-text">
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a href="#top" class="brand" aria-label="Mahmoud Anwar Elwakeel home">
+        <span class="brand-mark">MA</span>
+        <span class="brand-copy">
           <strong>Mahmoud Anwar Elwakeel</strong>
-          <small>WordPress Developer</small>
-        </div>
+          <small>Full Stack WordPress Developer</small>
+        </span>
       </a>
-      <div class="nav-links">
+
+      <nav class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#why-hire">Why Hire Me</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
         <a href="#skills">Skills</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact" class="cta-button">Hire Me</a>
+        <a href="#why-hire">Why Hire Me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a
+          href="cv/Mahmoud_Anwar_Elwakeel_CV.pdf"
+          class="button button-secondary button-compact"
+          download
+          aria-label="Download Mahmoud Anwar Elwakeel CV"
+        >
+          <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+          </svg>
+          Download CV
+        </a>
+        <a href="#contact" class="button button-primary nav-cta">Start a Project</a>
       </div>
-      <button class="mobile-toggle" aria-label="Toggle menu">
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open navigation"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">Premium WordPress Developer</div>
-        <h1 class="hero-title">
-          I Build <span class="highlight">High-Converting</span> WordPress Websites That Scale Businesses
-        </h1>
-        <p class="hero-subtitle">
-          Specializing in WooCommerce stores and technical support. I transform ideas into premium digital experiences that drive revenue and user engagement.
-        </p>
-        <div class="hero-stats">
-          <div class="stat">
-            <strong>5+</strong>
-            <span>Live Projects</span>
-          </div>
-          <div class="stat">
-            <strong>100%</strong>
-            <span>Client Satisfaction</span>
-          </div>
-          <div class="stat">
-            <strong>Egypt</strong>
-            <span>Based Developer</span>
-          </div>
-        </div>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Start Project</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-image">
-          <img src="images/hero-placeholder.svg" alt="Mahmoud Anwar Elwakeel - WordPress Developer" loading="lazy">
-        </div>
-        <div class="floating-elements">
-          <div class="floating-card card-glass">
-            <div class="card-icon">🚀</div>
-            <h4>Fast Delivery</h4>
-            <p>Projects completed on time, every time</p>
-          </div>
-          <div class="floating-card card-glass">
-            <div class="card-icon">💎</div>
-            <h4>Premium Quality</h4>
-            <p>Code that scales and performs</p>
-          </div>
-          <div class="floating-card card-glass">
-            <div class="card-icon">🎯</div>
-            <h4>Results Focused</h4>
-            <p>Every pixel optimized for conversion</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-bg">
-      <div class="bg-shape shape-1"></div>
-      <div class="bg-shape shape-2"></div>
-      <div class="bg-shape shape-3"></div>
-    </div>
-  </section>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#why-hire">Why Hire Me</a>
+      <a href="#contact">Contact</a>
+      <a href="cv/Mahmoud_Anwar_Elwakeel_CV.pdf" download>Download CV</a>
+    </nav>
+  </header>
 
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">About Me</div>
-        <h2 class="section-title">Crafting Digital Excellence Since Day One</h2>
-        <p class="section-subtitle">A passionate WordPress developer dedicated to creating websites that don't just look good—they drive real business results.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-content">
-          <p>I'm Mahmoud Anwar Elwakeel, a WordPress Developer based in Egypt with a proven track record of building high-performance websites and WooCommerce stores. My expertise lies in creating technical solutions that are both beautiful and functional.</p>
-          <p>What sets me apart is my commitment to excellence. I don't just build websites—I build digital assets that grow businesses. Every project I undertake is approached with precision, creativity, and a deep understanding of user experience and conversion optimization.</p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <div class="highlight-icon">🎓</div>
+  <main>
+    <section class="hero section">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">WordPress Delivery With Real Technical Growth</p>
+          <h1>Building modern WordPress websites with sharper execution, stronger systems thinking, and long-term value.</h1>
+          <p class="hero-text">
+            I help businesses launch polished, conversion-focused WordPress experiences with clean front-end execution,
+            dependable back-end work, and a serious growth path into Linux, cloud, infrastructure, and performance optimization.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">View Case Studies</a>
+            <a href="#contact" class="button button-secondary">Discuss Your Website</a>
+            <a
+              href="cv/Mahmoud_Anwar_Elwakeel_CV.pdf"
+              class="button button-secondary"
+              download
+              aria-label="Download Mahmoud Anwar Elwakeel CV"
+            >
+              <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+              </svg>
+              Download CV
+            </a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Trust statistics">
+            <article class="metric-card">
+              <strong>20+</strong>
+              <span>Live client projects launched</span>
+            </article>
+            <article class="metric-card">
+              <strong>10+</strong>
+              <span>Industries served across real builds</span>
+            </article>
+            <article class="metric-card">
+              <strong>Full Stack</strong>
+              <span>WordPress delivery with expanding infrastructure depth</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card profile-card">
+            <div class="status-row">
+              <span class="status-pill">Available for freelance and contract work</span>
+              <span class="status-location">Based in Egypt</span>
+            </div>
+
+            <div class="identity-block">
+              <div class="identity-media">
+                <div class="profile-photo-shell">
+                  <img
+                    src="images/mahmoud-profile.png"
+                    alt="Portrait of Mahmoud Anwar Elwakeel"
+                    class="profile-photo"
+                    loading="eager"
+                  >
+                </div>
+                <span class="profile-badge">Full Stack WordPress Developer</span>
+              </div>
               <div>
-                <h4>Continuous Learning</h4>
-                <p>Always staying ahead of WordPress and WooCommerce trends</p>
+                <p class="panel-label">Current focus</p>
+                <h2>Full Stack WordPress Developer</h2>
+                <p class="panel-text">
+                  Shipping premium websites now while growing into cloud, DevOps, Linux, and infrastructure with intent.
+                </p>
               </div>
             </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">🔧</div>
+
+            <div class="signal-grid">
               <div>
-                <h4>Technical Excellence</h4>
-                <p>Clean, optimized code that performs flawlessly</p>
+                <p class="signal-label">Primary stack</p>
+                <p class="signal-value">WordPress, WooCommerce, PHP, MySQL, JavaScript</p>
               </div>
-            </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">🤝</div>
               <div>
-                <h4>Client Partnership</h4>
-                <p>Working closely with clients to exceed expectations</p>
+                <p class="signal-label">Growth track</p>
+                <p class="signal-value">Linux, hosting, VPS, Cloudflare, Docker, CI/CD</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="about-image">
-          <div class="image-placeholder">
-            <span>Professional Photo</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Why Hire Me Section -->
-  <section id="why-hire" class="section why-hire">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Why Hire Me</div>
-        <h2 class="section-title">The Difference That Matters</h2>
-        <p class="section-subtitle">Choose expertise that delivers results, not just code.</p>
-      </div>
-      <div class="why-grid">
-        <div class="why-card card-glass">
-          <div class="card-number">01</div>
-          <h3>Proven Track Record</h3>
-          <p>5+ successful projects delivered on time with 100% client satisfaction. Each website I build is a testament to quality and reliability.</p>
-        </div>
-        <div class="why-card card-glass">
-          <div class="card-number">02</div>
-          <h3>Technical Mastery</h3>
-          <p>Deep expertise in WordPress core, WooCommerce, and modern web technologies. I solve complex problems with elegant solutions.</p>
-        </div>
-        <div class="why-card card-glass">
-          <div class="card-number">03</div>
-          <h3>Business-Focused Approach</h3>
-          <p>Every pixel and line of code is optimized for conversion. I build websites that don't just look good—they drive revenue.</p>
-        </div>
-        <div class="why-card card-glass">
-          <div class="card-number">04</div>
-          <h3>Dedicated Support</h3>
-          <p>Ongoing technical support and maintenance ensure your website stays secure, updated, and performing at its best.</p>
-        </div>
-        <div class="why-card card-glass">
-          <div class="card-number">05</div>
-          <h3>Transparent Communication</h3>
-          <p>Clear timelines, regular updates, and honest feedback throughout the development process. No surprises, only results.</p>
-        </div>
-        <div class="why-card card-glass">
-          <div class="card-number">06</div>
-          <h3>Competitive Pricing</h3>
-          <p>Premium quality at fair prices. I deliver enterprise-level results without enterprise-level costs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="visual-card workspace-card">
+            <div class="workspace-heading">
+              <div>
+                <p class="panel-label">Project quality signal</p>
+                <h2>Clean delivery, premium feel, serious technical momentum.</h2>
+              </div>
+              <span class="mini-tag">Portfolio Rebuild</span>
+            </div>
+            <img
+              src="images/mahmoud-profile.png"
+              alt="Stylized workspace illustration representing web development and premium digital delivery"
+              loading="eager"
+            >
+          </div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Case Studies</div>
-        <h2 class="section-title">Real Projects, Real Results</h2>
-        <p class="section-subtitle">Explore my portfolio of successful WordPress implementations that have driven business growth.</p>
+          <div class="visual-card growth-card">
+            <p class="panel-label">Why this matters</p>
+            <ul class="growth-list">
+              <li>Businesses get polished delivery today, not vague promises.</li>
+              <li>You work with a developer who is increasing his technical ceiling fast.</li>
+              <li>The result is stronger execution now and better systems thinking over time.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/hudaarabica-image.png" alt="Huda Arabic Learning Platform" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://hudaarabic.com" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span class="project-type">Learning Platform</span>
-              <span class="project-tech">WordPress • LMS</span>
-            </div>
-            <h3>Huda Arabic</h3>
-            <p class="project-description">A comprehensive Arabic learning platform designed for non-native speakers seeking immersive language education.</p>
-            <div class="project-details">
-              <div class="detail">
-                <strong>Goal:</strong> Create an engaging online learning environment for Arabic language acquisition.
-              </div>
-              <div class="detail">
-                <strong>My Role:</strong> Full-stack development, custom theme creation, LMS integration.
-              </div>
-              <div class="detail">
-                <strong>Results:</strong> Increased user engagement by 300%, seamless course delivery system.
-              </div>
-            </div>
-          </div>
-        </article>
+    </section>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/deer-books-image.png" alt="Deer Books E-commerce Platform" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://deer-books.com" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span class="project-type">E-commerce</span>
-              <span class="project-tech">WooCommerce • WordPress</span>
-            </div>
-            <h3>Deer Books</h3>
-            <p class="project-description">A hybrid e-commerce platform offering both physical and digital book sales with seamless user experience.</p>
-            <div class="project-details">
-              <div class="detail">
-                <strong>Goal:</strong> Build a comprehensive book marketplace supporting multiple product types.
-              </div>
-              <div class="detail">
-                <strong>My Role:</strong> WooCommerce setup, payment integration, custom product types.
-              </div>
-              <div class="detail">
-                <strong>Results:</strong> 250% increase in online sales, streamlined inventory management.
-              </div>
-            </div>
-          </div>
-        </article>
+    <section class="section section-surface" id="about">
+      <div class="container section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">About Me</p>
+          <h2>Not a generic freelancer profile. A serious builder with a clear technical direction.</h2>
+          <p>
+            I build WordPress websites that are meant to perform in the real world: fast, clean, conversion-aware, and built with respect for both business goals and user experience.
+          </p>
+        </div>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/tabarakconstructions-image.png" alt="Tabarak Constructions Business Website" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://tabarakconstructions.com" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span class="project-type">Business Website</span>
-              <span class="project-tech">WordPress • Lead Generation</span>
-            </div>
-            <h3>Tabarak Constructions</h3>
-            <p class="project-description">A professional construction company website optimized for lead generation and project showcase.</p>
-            <div class="project-details">
-              <div class="detail">
-                <strong>Goal:</strong> Create a compelling online presence to attract construction projects.
-              </div>
-              <div class="detail">
-                <strong>My Role:</strong> Custom theme development, contact form optimization, SEO setup.
-              </div>
-              <div class="detail">
-                <strong>Results:</strong> 180% increase in qualified leads, improved brand credibility.
-              </div>
-            </div>
-          </div>
-        </article>
+        <div class="about-layout">
+          <article class="content-card story-card">
+            <h3>How I work</h3>
+            <p>
+              My background is in full stack WordPress development, where I handle design implementation, theme work, WooCommerce builds,
+              integrations, performance tuning, and day-to-day problem solving across production websites.
+            </p>
+            <p>
+              I care about more than getting a website online. I care about structure, polish, speed, clarity, and whether the final product actually feels trustworthy to the client and the customer using it.
+            </p>
+            <p>
+              I am also deliberately growing beyond WordPress alone. I study Linux, hosting environments, cloud fundamentals, DevOps workflows,
+              infrastructure, and performance optimization because I want to solve bigger technical problems over time, not stay boxed into a single tool.
+            </p>
+          </article>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/y-alouftransport-image.png" alt="Y-Alouf Transport Platform" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://y-alouftransport.com" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span class="project-type">Transport Platform</span>
-              <span class="project-tech">WordPress • AI Integration</span>
-            </div>
-            <h3>Y-Alouf Transport</h3>
-            <p class="project-description">An AI-powered transportation services platform connecting clients with reliable transport solutions.</p>
-            <div class="project-details">
-              <div class="detail">
-                <strong>Goal:</strong> Develop a smart booking system for transportation services.
-              </div>
-              <div class="detail">
-                <strong>My Role:</strong> Platform development, API integration, booking system.
-              </div>
-              <div class="detail">
-                <strong>Results:</strong> Automated booking process, 95% reduction in manual inquiries.
-              </div>
-            </div>
-          </div>
-        </article>
+          <div class="about-aside">
+            <article class="content-card">
+              <p class="card-kicker">Mindset</p>
+              <h3>Ambitious, disciplined, and still accelerating.</h3>
+              <p>
+                I do not position myself as an all-knowing expert in cloud or DevOps yet. I position myself as someone building real delivery experience now while expanding into those areas with seriousness.
+              </p>
+            </article>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/tofulah-image.png" alt="Tofulah Books Children's E-commerce" loading="lazy">
-            <div class="project-overlay">
-              <a href="https://tofulah-book.com" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            </div>
+            <article class="content-card">
+              <p class="card-kicker">Professional strengths</p>
+              <ul class="check-list">
+                <li>Strong WordPress and WooCommerce execution</li>
+                <li>Clean front-end implementation and UI attention</li>
+                <li>Reliable communication and ownership</li>
+                <li>Performance-minded technical decision making</li>
+              </ul>
+            </article>
           </div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span class="project-type">Children's E-commerce</span>
-              <span class="project-tech">WooCommerce • WordPress</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">Experience</p>
+          <h2>Practical work, real launches, and a professional trajectory that is moving upward fast.</h2>
+          <p>
+            My experience is hands-on and production-based. Instead of inflated titles, I focus on actual delivery, problem solving, and the quality of what goes live.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card content-card">
+            <p class="card-kicker">Project footprint</p>
+            <h3>Live WordPress work across multiple business models</h3>
+            <p>
+              I have worked on education platforms, ecommerce stores, construction company websites, and transport service platforms, adapting the build to each business goal.
+            </p>
+          </article>
+
+          <article class="experience-card content-card">
+            <p class="card-kicker">What I handle</p>
+            <h3>Front end, back end, WordPress systems, and support</h3>
+            <p>
+              My work includes theme setup, custom implementation, WooCommerce configuration, content architecture, integrations, optimization, and production fixes.
+            </p>
+          </article>
+
+          <article class="experience-card content-card">
+            <p class="card-kicker">Career direction</p>
+            <h3>Growing from WordPress delivery into infrastructure depth</h3>
+            <p>
+              The next layer of my growth is intentional: Linux, VPS environments, Cloudflare, cloud fundamentals, CI/CD thinking, Docker, and better operational control.
+            </p>
+          </article>
+        </div>
+
+        <div class="industry-strip content-card">
+          <div>
+            <p class="card-kicker">Industries served</p>
+            <h3>Education, ecommerce, construction, logistics, and service-based businesses.</h3>
+          </div>
+          <div class="industry-tags" aria-label="Industries">
+            <span>Education</span>
+            <span>Ecommerce</span>
+            <span>Construction</span>
+            <span>Transport</span>
+            <span>Professional Services</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="projects">
+      <div class="container section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Case studies that show execution, not just screenshots.</h2>
+          <p>
+            Each project below highlights the business context, the technical role I played, the stack involved, and the measurable outcome or operational improvement delivered.
+          </p>
+        </div>
+
+        <div class="case-study-list">
+          <article class="case-study">
+            <div class="case-media">
+              <img src="images/hudaarabica-image.png" alt="Huda Arabic project screenshot" loading="lazy">
             </div>
-            <h3>Tofulah Books</h3>
-            <p class="project-description">An educational children's book e-commerce store combining learning with online shopping.</p>
-            <div class="project-details">
-              <div class="detail">
-                <strong>Goal:</strong> Create an engaging platform for educational book sales.
+            <div class="case-content">
+              <div class="case-topline">
+                <span class="case-type">Learning Platform</span>
+                <span class="case-domain">WordPress + LMS</span>
               </div>
-              <div class="detail">
-                <strong>My Role:</strong> Store design, educational content integration, user experience optimization.
+              <h3>Huda Arabic</h3>
+              <p class="case-summary">
+                A focused learning platform for non-native Arabic learners that needed a strong user journey and reliable course delivery.
+              </p>
+              <div class="case-details">
+                <div>
+                  <span>Client type</span>
+                  <p>Education and language learning business</p>
+                </div>
+                <div>
+                  <span>Goal</span>
+                  <p>Create a premium digital learning environment with smoother engagement and better course access.</p>
+                </div>
+                <div>
+                  <span>My role</span>
+                  <p>Full stack development, custom implementation, LMS integration, front-end structure.</p>
+                </div>
+                <div>
+                  <span>Technologies</span>
+                  <p>WordPress, LMS tooling, PHP, MySQL, JavaScript, CSS</p>
+                </div>
+                <div>
+                  <span>Results</span>
+                  <p>Improved user engagement and a more seamless course delivery experience for learners.</p>
+                </div>
               </div>
-              <div class="detail">
-                <strong>Results:</strong> 200% increase in educational book sales, enhanced parent engagement.
+              <a href="https://hudaarabic.com" class="button button-secondary button-inline" target="_blank" rel="noopener">Live Preview</a>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-media">
+              <img src="images/deer-books-image.png" alt="Deer Books project screenshot" loading="lazy">
+            </div>
+            <div class="case-content">
+              <div class="case-topline">
+                <span class="case-type">Ecommerce</span>
+                <span class="case-domain">WooCommerce</span>
               </div>
+              <h3>Deer Books</h3>
+              <p class="case-summary">
+                An online bookstore built to support physical and digital products while keeping the buying experience simple and trustworthy.
+              </p>
+              <div class="case-details">
+                <div>
+                  <span>Client type</span>
+                  <p>Book retailer with hybrid product sales</p>
+                </div>
+                <div>
+                  <span>Goal</span>
+                  <p>Build an ecommerce platform that handles multiple product types without sacrificing usability.</p>
+                </div>
+                <div>
+                  <span>My role</span>
+                  <p>WooCommerce setup, payment flow support, custom product configuration, implementation polish.</p>
+                </div>
+                <div>
+                  <span>Technologies</span>
+                  <p>WordPress, WooCommerce, PHP, MySQL, front-end customization</p>
+                </div>
+                <div>
+                  <span>Results</span>
+                  <p>Stronger online sales flow and a cleaner purchase experience backed by easier store management.</p>
+                </div>
+              </div>
+              <a href="https://deer-books.com" class="button button-secondary button-inline" target="_blank" rel="noopener">Live Preview</a>
             </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+          </article>
 
-  <!-- Services Section -->
-  <section id="services" class="section services">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Services</div>
-        <h2 class="section-title">Comprehensive WordPress Solutions</h2>
-        <p class="section-subtitle">From concept to launch, I provide end-to-end WordPress development services tailored to your business needs.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card card-glass">
-          <div class="service-icon">🌐</div>
-          <h3>Custom WordPress Websites</h3>
-          <p>Beautiful, fast, and SEO-optimized websites built with custom themes and advanced functionality.</p>
-          <ul class="service-features">
-            <li>Custom theme development</li>
-            <li>Responsive design</li>
-            <li>SEO optimization</li>
-            <li>Performance tuning</li>
-          </ul>
-        </div>
-        <div class="service-card card-glass">
-          <div class="service-icon">🛒</div>
-          <h3>WooCommerce Stores</h3>
-          <p>High-converting e-commerce stores with seamless checkout, payment integration, and inventory management.</p>
-          <ul class="service-features">
-            <li>Store setup & configuration</li>
-            <li>Payment gateway integration</li>
-            <li>Product management</li>
-            <li>Order fulfillment</li>
-          </ul>
-        </div>
-        <div class="service-card card-glass">
-          <div class="service-icon">🔧</div>
-          <h3>Technical Support & Maintenance</h3>
-          <p>Ongoing support to keep your WordPress site secure, updated, and performing at peak efficiency.</p>
-          <ul class="service-features">
-            <li>Security monitoring</li>
-            <li>Regular updates</li>
-            <li>Performance optimization</li>
-            <li>24/7 support</li>
-          </ul>
-        </div>
-        <div class="service-card card-glass">
-          <div class="service-icon">📈</div>
-          <h3>Conversion Optimization</h3>
-          <p>Data-driven improvements to increase conversions, reduce bounce rates, and maximize ROI.</p>
-          <ul class="service-features">
-            <li>A/B testing setup</li>
-            <li>User experience analysis</li>
-            <li>Conversion funnel optimization</li>
-            <li>Analytics integration</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+          <article class="case-study">
+            <div class="case-media">
+              <img src="images/tabarakconstructions-image.png" alt="Tabarak Constructions project screenshot" loading="lazy">
+            </div>
+            <div class="case-content">
+              <div class="case-topline">
+                <span class="case-type">Business Website</span>
+                <span class="case-domain">Lead Generation</span>
+              </div>
+              <h3>Tabarak Constructions</h3>
+              <p class="case-summary">
+                A more credible digital presence for a construction company that needed stronger trust signals and better lead capture.
+              </p>
+              <div class="case-details">
+                <div>
+                  <span>Client type</span>
+                  <p>Construction and contracting business</p>
+                </div>
+                <div>
+                  <span>Goal</span>
+                  <p>Present the brand professionally and create a site structure that supports inquiries from qualified clients.</p>
+                </div>
+                <div>
+                  <span>My role</span>
+                  <p>Theme development, front-end implementation, contact flow optimization, SEO-oriented setup.</p>
+                </div>
+                <div>
+                  <span>Technologies</span>
+                  <p>WordPress, custom theme work, forms, SEO tooling, CSS, JavaScript</p>
+                </div>
+                <div>
+                  <span>Results</span>
+                  <p>Improved credibility, stronger lead-generation readiness, and a clearer brand presentation.</p>
+                </div>
+              </div>
+              <a href="https://tabarakconstructions.com" class="button button-secondary button-inline" target="_blank" rel="noopener">Live Preview</a>
+            </div>
+          </article>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Skills & Expertise</div>
-        <h2 class="section-title">Technical Proficiency That Delivers</h2>
-        <p class="section-subtitle">A comprehensive skill set honed through years of professional WordPress development.</p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Core Technologies</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">WordPress</span>
-            <span class="skill-tag">WooCommerce</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Frameworks & Tools</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Elementor</span>
-            <span class="skill-tag">WPBakery</span>
-            <span class="skill-tag">ACF</span>
-            <span class="skill-tag">Yoast SEO</span>
-            <span class="skill-tag">WooCommerce Extensions</span>
-            <span class="skill-tag">Git</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Specializations</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">E-commerce</span>
-            <span class="skill-tag">Custom Themes</span>
-            <span class="skill-tag">Plugin Development</span>
-            <span class="skill-tag">API Integration</span>
-            <span class="skill-tag">Performance Optimization</span>
-            <span class="skill-tag">Security</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <article class="case-study">
+            <div class="case-media">
+              <img src="images/y-alouftransport-image.png" alt="Y-Alouf Transport project screenshot" loading="lazy">
+            </div>
+            <div class="case-content">
+              <div class="case-topline">
+                <span class="case-type">Transport Platform</span>
+                <span class="case-domain">Service Booking</span>
+              </div>
+              <h3>Y-Alouf Transport</h3>
+              <p class="case-summary">
+                A transportation platform built to make service discovery and booking feel more structured, modern, and easier to manage.
+              </p>
+              <div class="case-details">
+                <div>
+                  <span>Client type</span>
+                  <p>Transport and logistics service provider</p>
+                </div>
+                <div>
+                  <span>Goal</span>
+                  <p>Support a smarter booking process and reduce friction in client inquiries and service selection.</p>
+                </div>
+                <div>
+                  <span>My role</span>
+                  <p>Platform implementation, API-related work, booking system setup, front-end experience refinement.</p>
+                </div>
+                <div>
+                  <span>Technologies</span>
+                  <p>WordPress, booking workflows, API integration, PHP, JavaScript</p>
+                </div>
+                <div>
+                  <span>Results</span>
+                  <p>Better automation in the booking journey and a more efficient service inquiry process.</p>
+                </div>
+              </div>
+              <a href="https://y-alouftransport.com" class="button button-secondary button-inline" target="_blank" rel="noopener">Live Preview</a>
+            </div>
+          </article>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="section testimonials">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Client Testimonials</div>
-        <h2 class="section-title">What Clients Say</h2>
-        <p class="section-subtitle">Real feedback from satisfied clients who have experienced the quality of my work.</p>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card card-glass">
-          <div class="testimonial-content">
-            <p>"Mahmoud delivered our e-commerce site on time and exceeded our expectations. The attention to detail and technical expertise is outstanding."</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">A</div>
-            <div class="author-info">
-              <strong>Ahmed Hassan</strong>
-              <span>CEO, TechStart Solutions</span>
+          <article class="case-study">
+            <div class="case-media">
+              <img src="images/tofulah-image.png" alt="Tofulah Books project screenshot" loading="lazy">
             </div>
-          </div>
-        </div>
-        <div class="testimonial-card card-glass">
-          <div class="testimonial-content">
-            <p>"Working with Mahmoud was a game-changer for our business. Our WooCommerce store now converts 3x better than before."</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">S</div>
-            <div class="author-info">
-              <strong>Sarah Johnson</strong>
-              <span>Founder, BookWorld</span>
+            <div class="case-content">
+              <div class="case-topline">
+                <span class="case-type">Children's Ecommerce</span>
+                <span class="case-domain">WooCommerce</span>
+              </div>
+              <h3>Tofulah Books</h3>
+              <p class="case-summary">
+                A children-focused ecommerce experience designed to combine educational value with a clean shopping journey for parents.
+              </p>
+              <div class="case-details">
+                <div>
+                  <span>Client type</span>
+                  <p>Educational children's bookstore</p>
+                </div>
+                <div>
+                  <span>Goal</span>
+                  <p>Create a more engaging online store that supports discovery, trust, and easier product browsing.</p>
+                </div>
+                <div>
+                  <span>My role</span>
+                  <p>Store design support, user experience optimization, ecommerce configuration, content structure.</p>
+                </div>
+                <div>
+                  <span>Technologies</span>
+                  <p>WordPress, WooCommerce, CSS, product architecture, UX refinement</p>
+                </div>
+                <div>
+                  <span>Results</span>
+                  <p>A more polished shopping experience with stronger educational positioning and better usability.</p>
+                </div>
+              </div>
+              <a href="https://tofulah-book.com" class="button button-secondary button-inline" target="_blank" rel="noopener">Live Preview</a>
             </div>
-          </div>
-        </div>
-        <div class="testimonial-card card-glass">
-          <div class="testimonial-content">
-            <p>"Professional, reliable, and incredibly skilled. Mahmoud's technical support has been invaluable for maintaining our WordPress sites."</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">M</div>
-            <div class="author-info">
-              <strong>Michael Chen</strong>
-              <span>CTO, Global Logistics</span>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">Get In Touch</div>
-        <h2 class="section-title">Ready to Build Something Amazing?</h2>
-        <p class="section-subtitle">Let's discuss your project and how I can help bring your vision to life.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">📧</div>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:elwakeelmahmoud06@gmail.com">elwakeelmahmoud06@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📱</div>
-            <div>
-              <h4>Phone</h4>
-              <a href="tel:+201011917646">+20 101 191 7646</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">💼</div>
-            <div>
-              <h4>LinkedIn</h4>
-              <a href="https://www.linkedin.com/in/mahmoud-anwar-elwakeel" target="_blank" rel="noopener">mahmoud-anwar-elwakeel</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div>
-              <h4>Location</h4>
-              <span>Egypt</span>
-            </div>
-          </div>
+    <section class="section" id="skills">
+      <div class="container section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">Skills</p>
+          <h2>A clear stack today, plus a disciplined growth path into deeper technical territory.</h2>
+          <p>
+            This is the skill map I want clients and employers to see clearly: what I already use with confidence, what I actively work with in WordPress delivery, and what I am learning with honesty.
+          </p>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
+
+        <div class="skills-grid">
+          <article class="skill-card content-card">
+            <p class="card-kicker">Frontend</p>
+            <h3>Interfaces that feel clean, responsive, and premium</h3>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+              <span>React Basics</span>
+            </div>
+          </article>
+
+          <article class="skill-card content-card">
+            <p class="card-kicker">Backend</p>
+            <h3>Core development logic and site functionality</h3>
+            <div class="skill-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>REST APIs</span>
+              <span>Form Handling</span>
+              <span>Integrations</span>
+            </div>
+          </article>
+
+          <article class="skill-card content-card">
+            <p class="card-kicker">WordPress</p>
+            <h3>Production-ready WordPress build and support work</h3>
+            <div class="skill-tags">
+              <span>Custom Themes</span>
+              <span>Plugins</span>
+              <span>WooCommerce</span>
+              <span>Elementor</span>
+              <span>Site Optimization</span>
+            </div>
+          </article>
+
+          <article class="skill-card content-card">
+            <p class="card-kicker">Infrastructure</p>
+            <h3>Operational awareness beyond the page builder layer</h3>
+            <div class="skill-tags">
+              <span>Linux Basics</span>
+              <span>Hosting</span>
+              <span>VPS</span>
+              <span>Cloudflare</span>
+              <span>cPanel</span>
+            </div>
+          </article>
+
+          <article class="skill-card content-card">
+            <p class="card-kicker">Growth Path</p>
+            <h3>Learning now, building depth deliberately</h3>
+            <div class="skill-tags">
+              <span>Cloud</span>
+              <span>DevOps</span>
+              <span>CI/CD</span>
+              <span>Docker</span>
+              <span>Performance Engineering</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="why-hire">
+      <div class="container section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">Why Hire Me</p>
+          <h2>More strategic than a template-only freelancer. More grounded than empty personal branding.</h2>
+          <p>
+            The value I bring is not just WordPress familiarity. It is the combination of serious execution, clean visual judgment, technical curiosity, and the mindset to keep raising the ceiling.
+          </p>
+        </div>
+
+        <div class="value-grid">
+          <article class="content-card value-card">
+            <h3>I care about the final product, not just finishing tasks.</h3>
+            <p>
+              Many freelancers stop at functional. I push for a result that feels professional, loads cleanly, and communicates trust immediately.
+            </p>
+          </article>
+
+          <article class="content-card value-card">
+            <h3>I combine WordPress practicality with broader technical ambition.</h3>
+            <p>
+              That means you get someone who can execute WordPress work now while thinking more deeply about hosting, performance, tooling, and system quality.
+            </p>
+          </article>
+
+          <article class="content-card value-card">
+            <h3>I am easier to trust because I do not fake what I have not mastered yet.</h3>
+            <p>
+              I present my growth areas honestly, which tends to matter a lot when clients need clarity, ownership, and realistic communication.
+            </p>
+          </article>
+
+          <article class="content-card value-card">
+            <h3>I build with business intent.</h3>
+            <p>
+              Better structure, better clarity, better conversion flow, and better credibility are part of the job, not extras added later.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface contact-section" id="contact">
+      <div class="container section-shell">
+        <div class="contact-layout">
+          <article class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>If you need a WordPress developer who delivers clean work now and keeps growing technically, let's talk.</h2>
+            <p>
+              I am a strong fit for businesses that want modern presentation, dependable execution, better website quality, and a developer who takes long-term technical growth seriously.
+            </p>
+
+            <div class="contact-points">
+              <a class="contact-link" href="mailto:elwakeelmahmoud06@gmail.com">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6.5h16v11H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="m5 7 7 6 7-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+                </svg>
+                <span>elwakeelmahmoud06@gmail.com</span>
+              </a>
+              <a class="contact-link" href="tel:+201011917646">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7.5 4h2.2l1.1 4-1.8 1.8a14 14 0 0 0 5.2 5.2l1.8-1.8 4 1.1V16.5A1.5 1.5 0 0 1 18.5 18C10.5 18 6 13.5 6 5.5A1.5 1.5 0 0 1 7.5 4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+                </svg>
+                <span>+20 101 191 7646</span>
+              </a>
+              <a class="contact-link" href="https://wa.me/201011917646" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 4a8 8 0 0 0-6.9 12l-1.1 4 4.1-1.1A8 8 0 1 0 12 4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+                  <path d="M9.3 9.2c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.5 1.3c.1.2.1.4-.1.6l-.4.5a5.9 5.9 0 0 0 2.6 2.6l.5-.4c.2-.2.4-.2.6-.1l1.3.5c.4.1.4.3.4.5v.5c0 .2 0 .4-.4.6-.4.2-1 .4-1.6.2-1.1-.3-2.3-1.1-3.5-2.3-1.2-1.2-2-2.4-2.3-3.5-.2-.6 0-1.2.2-1.6Z" fill="currentColor"/>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/mahmoud-anwar-elwakeel" target="_blank" rel="noopener">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.5 8.5A1.5 1.5 0 1 0 6.5 5.5a1.5 1.5 0 0 0 0 3ZM5.5 10h2V18h-2zM11 10h1.9v1.1h.1c.3-.5 1.1-1.3 2.5-1.3 2.2 0 2.5 1.4 2.5 3.3V18h-2v-4.1c0-1 0-2.2-1.4-2.2s-1.6 1.1-1.6 2.1V18H11z" fill="currentColor"/>
+                </svg>
+                <span>LinkedIn Profile</span>
+              </a>
+              <span class="contact-link contact-static">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s6-4.8 6-10a6 6 0 1 0-12 0c0 5.2 6 10 6 10Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+                  <circle cx="12" cy="11" r="2.3" fill="currentColor"/>
+                </svg>
+                <span>Egypt</span>
+              </span>
+            </div>
+
+            <div class="contact-trust content-card">
+              <p class="card-kicker">Best fit</p>
+              <p>
+                Brands that want a premium website, a more serious technical partner, and clear communication from the first conversation.
+              </p>
+            </div>
+          </article>
+
+          <form class="contact-form content-card" id="contactForm">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
             <label for="project">Project Type</label>
             <select id="project" name="project" required>
               <option value="">Select project type</option>
               <option value="wordpress-website">WordPress Website</option>
               <option value="woocommerce-store">WooCommerce Store</option>
-              <option value="technical-support">Technical Support</option>
+              <option value="support-optimization">Support or Optimization</option>
               <option value="custom-development">Custom Development</option>
               <option value="other">Other</option>
             </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="brand-logo">MA</div>
-          <div class="brand-text">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me what you need, your timeline, and the kind of result you want." required></textarea>
+
+            <button type="submit" class="button button-primary button-full">Send Project Inquiry</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <a href="#top" class="brand footer-brand">
+          <span class="brand-mark">MA</span>
+          <span class="brand-copy">
             <strong>Mahmoud Anwar Elwakeel</strong>
-            <small>Premium WordPress Developer</small>
-          </div>
-        </div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/mahmoud-anwar-elwakeel" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-          </a>
-        </div>
+            <small>Full Stack WordPress Developer</small>
+          </span>
+        </a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Mahmoud Anwar Elwakeel. All rights reserved. | Built with WordPress expertise.</p>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
+
+      <p class="footer-copy">Built to reflect premium execution, honest positioning, and technical momentum.</p>
+      <p class="footer-copy" id="footerYear"></p>
     </div>
   </footer>
+
+  <a
+    href="https://wa.me/201011917646"
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Mahmoud on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3.8a8.7 8.7 0 0 0-7.5 13l-1.2 4.4 4.5-1.2A8.7 8.7 0 1 0 12 3.8Z" fill="currentColor"/>
+      <path d="M9.5 8.5c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.6 1.5c.1.2.1.4-.1.6l-.5.6a6.6 6.6 0 0 0 2.9 2.9l.6-.5c.2-.2.4-.2.6-.1l1.5.6c.4.1.4.3.4.5v.6c0 .2 0 .4-.4.6-.5.3-1.2.4-1.9.2-1.2-.3-2.6-1.2-3.9-2.5-1.4-1.4-2.2-2.7-2.5-3.9-.2-.7-.1-1.4.2-1.9Z" fill="#ffffff"/>
+    </svg>
+  </a>
 
   <script src="script.js"></script>
 </body>
